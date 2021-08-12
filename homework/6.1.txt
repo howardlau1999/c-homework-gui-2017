@@ -1,0 +1,3 @@
+char toLowercase(char c) {
+	return c - ('A' - 'a');
+}

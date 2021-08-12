@@ -1,0 +1,19 @@
+int getDigit(char c) {
+	if (c >= 'A' && c <= 'F') return (c - 'A' + 10);
+	else if (c >= 'a' && c <= 'f') return (c - 'a' + 10);
+	else if (c >= '0' && c <= '9') return (c - '0');
+	return 0;
+}
+
+int parseHex(const char hexString[]) {
+	int top = 0;
+	char hexchar = 0;
+	int ans = 0;
+
+	while ( (hexchar = hexString[top++]) ) {
+		ans *= 16;
+		ans += getDigit(hexchar);
+	}
+
+	return ans;
+}

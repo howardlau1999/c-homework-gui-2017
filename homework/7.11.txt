@@ -1,0 +1,11 @@
+int isLetter(char c) {
+	return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+}
+
+int countLetters(const char* line) {
+	int top = 0;
+	int ans = 0;
+	char c = 0;
+	while ( (c = line[top++]) ) ans += isLetter(c);
+	return ans; 
+}

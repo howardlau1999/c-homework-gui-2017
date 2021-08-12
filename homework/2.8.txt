@@ -1,0 +1,4 @@
+int year = 1990;
+double seconds = 1234.56;
+char code = 'C';
+bool isMonday = true;

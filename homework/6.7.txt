@@ -1,0 +1,13 @@
+double sqrt(double n);
+
+// check if a number is prime number
+
+int isPrime(int num) {
+	double root = sqrt(num);
+
+	for (int i = 2; i <= root; i++) {
+		if (num % i == 0) return 0;
+	}
+
+	return 1;
+}

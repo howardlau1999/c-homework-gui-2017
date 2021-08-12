@@ -1,0 +1,4 @@
+{
+	"C Main" : "#include <stdio.h>\n\nint main() {\n\t\n\treturn 0;\n}",
+	"C++ Main": "#include <iostream>\n\nusing namespace std;\n\nint main() {\n\t\n\treturn 0;\n}"
+}

@@ -1,0 +1,12 @@
+int parseBin(const char binaryString[]) {
+	int top = 0;
+	char binarychar = 0;
+	int ans = 0;
+
+	while ( (binarychar = binaryString[top++]) ) {
+		ans *= 2;
+		ans += (binarychar - '0');
+	}
+
+	return ans;
+}

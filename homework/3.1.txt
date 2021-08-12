@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main() {
+    printf("%lf", sin(PI/6));
+    return 0;
+}

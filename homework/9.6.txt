@@ -1,0 +1,16 @@
+int knapsack(int prices[], int weights[], int maxWeight) {
+    int ans[100][100] = {0};
+    for (int bpWeight = 1; bpWeight <= maxWeight; bpWeight ++) {
+        for (int things = 1; things <= 10; things ++) {
+            int max = ans[things - 1][bpWeight];
+            if (bpWeight >= weights[things - 1]) {
+                int attempt = ans[things - 1][bpWeight - weights[things - 1]] + prices[things - 1];
+                if (attempt > max)
+                    max = attempt;
+            }
+            ans[things][bpWeight] = max;
+        }
+        
+    }
+    return ans[10][maxWeight];
+}

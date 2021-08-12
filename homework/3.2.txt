@@ -1,0 +1,9 @@
+double cos(double x) {
+    double x2 = x * x;
+    double x4 = x2 * x2;
+    double x6 = x4 * x2;
+    double fac2 = 2;
+    double fac4 = 4 * 3 * fac2;
+    double fac6 = 6 * 5 * fac4;
+    return 1 - x2 / fac2 + x4 / fac4 -x6 / fac6;
+}

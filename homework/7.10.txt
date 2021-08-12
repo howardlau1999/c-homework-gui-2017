@@ -1,0 +1,9 @@
+void countDigits(const char *s, int ans[]) {
+	int i;
+	int top = 0;
+	char c = 0;
+	for (i = 0; i < 10; i++) ans[i] = 0;
+	while ( (c = s[top++]) ) {
+		ans[c - '0']++;
+	}
+}

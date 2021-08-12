@@ -1,0 +1,4 @@
+int year;
+double seconds;
+bool isMonday;
+char code;

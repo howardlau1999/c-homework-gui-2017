@@ -1,0 +1,3 @@
+int year;
+double seconds;
+char code;

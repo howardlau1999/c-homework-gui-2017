@@ -1,0 +1,9 @@
+int reverse(int num) {
+	int ans = 0;
+	while (num) {
+		ans *= 10;
+		ans += (num % 10);
+		num /= 10;
+	}
+	return ans;
+}

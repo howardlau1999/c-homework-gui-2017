@@ -1,0 +1,13 @@
+// sort
+void sort(const struct Goods *goods[], int size) {
+	for (int i = size; i > 0; i --) {
+		for (int j = 0; j < i - 1; j ++) {
+			if (goods[j]->price > goods[j + 1]->price) {
+				const struct Goods *t = goods[j];
+				goods[j] = goods[j + 1];
+				goods[j + 1] = t;
+			}
+		}
+	}
+}
+

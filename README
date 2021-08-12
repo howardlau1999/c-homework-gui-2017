@@ -1,0 +1,30 @@
+1. install python3 first (not python2)
+                 ^python 3.5.2 tested
+
+2. install pip (search how to install it yourself)
+   * no need to install if python version >= 3.4 but upgrade is needed (optional)
+
+3. run "pip -V" and "python -V" to check pip version and python version, make sure they both satisfy python >= 3.4
+   * on Ubuntu there usually exist both python2 and python3
+   * in this case, you will need to run "pip3 ..." and "python3 ..." to replace all the commands below
+
+4. cd into the gui directory and run "pip install -r requirement.txt" and wait
+   (if any error occured please re-run the command)
+   * when "failed to create process" appears, run "python -m pip install -r requirement.txt" instead
+   * don't forget to run pip3 and python3 on Ubuntu!
+
+5. double-click on "gui.pyw" to run the program
+   * or run "python3 gui.pyw" on Ubuntu
+
+6. remember to setup your username and password first (on the top-left corner of the menu bar)
+   * on Ubuntu the menu bar is on the top of the screen
+
+any suggestions are warmly welcomed!
+
+you may modify the code yourself and share if you like!
+
+p.s:
+
+sometimes the program fails to run on Ubuntu, maybe it would say that "...module PyQt5.Qsci is not found"
+
+contact me in this case.

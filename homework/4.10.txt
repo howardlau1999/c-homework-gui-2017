@@ -1,0 +1,10 @@
+int main() {
+    char c;
+    scanf("%c", &c);
+    printBits(c);
+    printf("\n");
+    c >>= 5;
+    c <<= 3;
+    printBits(c);
+    return 0;
+}

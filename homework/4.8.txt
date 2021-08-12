@@ -1,0 +1,16 @@
+int main() {
+	int a, b;
+    scanf("%d %d", &a, &b);
+    printBits(a);
+    printf("\n");
+    printBits(b);
+    printf("\n");
+    printBits(a & b);
+    printf("\n");
+    printBits(a | b);
+    printf("\n");
+    printBits(a ^ b);
+    printf("\n");
+    
+    return 0;
+}
