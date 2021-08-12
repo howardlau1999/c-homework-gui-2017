@@ -5,7 +5,7 @@ future==0.16.0
 idna==2.5
 macholib==1.8
 numpy==1.13.1
-PyQt5==5.15
+PyQt5
 QScintilla==2.10.1
 requests==2.18.3
 sip==4.19.3
